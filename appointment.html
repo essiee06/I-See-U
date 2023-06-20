@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="UTF-8" />
+  	<meta name="viewport" content="width=device-width, initial-scale=1">
+  	<link href="css/bootstrap.css" rel="stylesheet" type="text/css" media="all" />
+  	<link href="css/style.css" rel="stylesheet" type="text/css" media="all" />
+  	<link rel="stylesheet" href="css/appoint.css">
+  	<title>Appointment | iSeeU</title>
+  	<link rel="shortcut icon" href="eye.png" type="image/x-icon" />
+  </head>
+  <body>
+    <div class="main" id="home">
+    <!-- banner -->
+
+    		<div class="header-bottom">
+    			<nav class="navbar navbar-default">
+    				<!-- Brand and toggle get grouped for better mobile display -->
+    				<div class="navbar-header">
+    				  <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+    					<span class="sr-only">Toggle navigation</span>
+    					<span class="icon-bar"></span>
+    					<span class="icon-bar"></span>
+    					<span class="icon-bar"></span>
+    				  </button>
+    					<div class="logo">
+    						<h3><a class="navbar-brand" href="index.html">
+    						<img src="iseeu.png" height="35" />
+    						</a></h3>
+    					</div>
+    				</div>
+
+    				<!-- Collect the nav links, forms, and other content for toggling -->
+    				<div class="collapse navbar-collapse nav-wil" id="bs-example-navbar-collapse-1">
+    					<nav class="menu menu--sebastian">
+    					<ul id="m_nav_list" class="m_nav menu__list">
+    						<li class="m_nav_item menu__item" id="m_nav_item_1"> <a href="index.html" class="menu__link"> Home </a></li>
+    						<li class="m_nav_item menu__item" id="moble_nav_item_2"> <a href="about.html" class="menu__link"> About Us </a> </li>
+    						<li class="m_nav_item menu__item  menu__item--current" id="moble_nav_item_4"> <a href="appointment.html" class="menu__link">Appointment  </a> </li>
+    						<li class="m_nav_item menu__item" id="moble_nav_item_4"> <a href="dlogin.html" class="menu__link">Clinic-Login </a> </li>
+    						</li>
+    					</ul>
+    				</nav>
+
+    				</div>
+    				<!-- /.navbar-collapse -->
+    			</nav>
+    	 </div>
+    	</div>
+    <!-- banner -->
+    <!-- banner1 -->
+    	<div class="banner1 jarallax">
+    		<div class="container">
+    		</div>
+    	</div>
+
+    	<div class="services-breadcrumb">
+    		<div class="container">
+    			<ul>
+    				<li><a href="index.html">Home</a><i>|</i></li>
+    				<li>Appointment</li>
+    			</ul>
+    		</div>
+    	</div>
+    <!-- //banner1 -->
+    <!-- icons -->
+    	<div class="banner-bottom" id="about">
+        <div class="container">
+          <h2 class="w3_heade_tittle_agile">Appointment</h2>
+          <p class="sub_t_agileits">Book an Appointment with one of the available Eye Clinics!</p>
+
+          <div class="home-content">
+            <div class="sales-boxes">
+              <div class="recent-sales box">
+          <div class="sales-details">
+            <ul class="details" id="clinic_name">
+            <li class="topic">Clinic Name</li>
+          </ul>
+           <ul class="details" id="sched_date">
+            <li class="topic">Date</li>
+          </ul>
+            <ul class="details" id="sched_day">
+            <li class="topic">Day</li>
+          </ul>
+		  <ul class="details" id="start_time">
+            <li class="topic">Start Time</li>
+          </ul>
+          <ul class="details" id="end_time">
+            <li class="topic">End Time</li>
+          </ul>
+            <ul class="details" id="book">
+            <li class="topic">Book Appointment</li>
+          </ul>
+          </div>
+        </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- icons -->
+
+
+
+    <a href="#" id="toTop" style="display: block;"> <span id="toTopHover" style="opacity: 1;"> </span></a>
+     <!-- js -->
+     <!--for banner-->
+    <script src="js/jquery-2.2.3.min.js"></script>
+
+    <!-- start-smoth-scrolling -->
+    <script type="text/javascript" src="js/move-top.js"></script>
+    <script type="text/javascript" src="js/easing.js"></script>
+    <script type="text/javascript">
+    	jQuery(document).ready(function($) {
+    		$(".scroll").click(function(event){
+    			event.preventDefault();
+    			$('html,body').animate({scrollTop:$(this.hash).offset().top},1000);
+    		});
+    	});
+    </script>
+    <!-- start-smoth-scrolling -->
+    	<script src="js/jarallax.js"></script>
+    	<script type="text/javascript">
+    		/* init Jarallax */
+    		$('.jarallax').jarallax({
+    			speed: 0.5,
+    			imgWidth: 1366,
+    			imgHeight: 768
+    		})
+    	</script>
+
+    	<script src="js/bootstrap.js"></script>
+    <!-- //for bootstrap working -->
+    <!-- here stars scrolling icon -->
+    	<script type="text/javascript">
+    		$(document).ready(function() {
+
+    			$().UItoTop({ easingType: 'easeOutQuart' });
+
+    			});
+    	</script>
+
+
+    	<script>
+    function myFunction1() {
+      alert("Your appointment is booked. Our specalist is available in your given date and time.");
+    }
+    </script>
+    <!-- //here ends scrolling icon -->
+
+ <!-- The core Firebase JS SDK is always required and must be listed first -->
+ <script src="https://www.gstatic.com/firebasejs/8.6.8/firebase-app.js"></script>
+
+
+ <!-- TODO: Add SDKs for Firebase products that you want to use
+	  https://firebase.google.com/docs/web/setup#available-libraries -->
+ <script src="https://www.gstatic.com/firebasejs/8.6.8/firebase-analytics.js"></script>
+ <script src="https://www.gstatic.com/firebasejs/8.6.8/firebase-auth.js"></script>
+ <script src="https://www.gstatic.com/firebasejs/8.6.8/firebase-firestore.js"></script>
+
+ <script>
+	var firebaseConfig = {
+    apiKey: "AIzaSyCPsz-wWhl_iq-95a3HxlhqB9KkZMKU-EE",
+    authDomain: "iseeu-4eb33.firebaseapp.com",
+    databaseURL: "https://iseeu-4eb33-default-rtdb.asia-southeast1.firebasedatabase.app",
+    projectId: "iseeu-4eb33",
+    storageBucket: "iseeu-4eb33.appspot.com",
+    messagingSenderId: "889653753645",
+    appId: "1:889653753645:web:a8e5c5d908cbafab71c5a4",
+    measurementId: "G-27WCX8J7DB"
+  };
+
+   // Initialize Firebase
+   firebase.initializeApp(firebaseConfig);
+  firebase.analytics();
+
+    // Make auth and firestore references
+	const auth = firebase.auth();
+	const db = firebase.firestore();
+ </script>
+<script src="js/appoint.js"></script>
+
+  </body>
+</html>

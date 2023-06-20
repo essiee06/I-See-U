@@ -1,0 +1,282 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+
+	<script type="application/x-javascript"> addEventListener("load", function() { setTimeout(hideURLbar, 0); }, false);
+		function hideURLbar(){ window.scrollTo(0,1); } </script>
+
+	<link href="css/bootstrap.css" rel="stylesheet" type="text/css" media="all" />
+	<link href="css/style1.css" rel="stylesheet" type="text/css" media="all" />
+	<link rel="stylesheet" href="css/dstyle.css">
+	<title>Book Appointment | iSeeU</title>
+	<link rel="shortcut icon" href="eye.png" type="image/x-icon" />
+	<style>
+		.button1
+		{
+			background-color: darkred;
+		  border: none;
+		  color: white;
+		  padding: 10px 10px;
+		  text-align: center;
+		  text-decoration: none;
+		  display: inline-block;
+		  font-size: 16px;
+		  margin: 4px 2px;
+		  cursor: pointer;
+		  border-radius: 8px;
+			margin-left: 370px;
+		}
+	</style>
+</head>
+
+<body>
+<div class="main" id="home">
+<!-- banner -->
+		<div class="header-bottom">
+			<nav class="navbar navbar-default">
+				<!-- Brand and toggle get grouped for better mobile display -->
+				<div class="navbar-header">
+				  <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+					<span class="sr-only">Toggle navigation</span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+				  </button>
+					<div class="logo">
+						<h3><a class="navbar-brand" href="index.html">
+						<img src="iseeu.png" height="35" />
+						</a></h3>
+					</div>
+				</div>
+
+				<!-- Collect the nav links, forms, and other content for toggling -->
+				<div class="collapse navbar-collapse nav-wil" id="bs-example-navbar-collapse-1">
+					<nav class="menu menu--sebastian">
+					<ul id="m_nav_list" class="m_nav menu__list">
+						<li class="m_nav_item menu__item" id="m_nav_item_1"> <a href="index.html" class="menu__link"> Home </a></li>
+						<li class="m_nav_item menu__item" id="moble_nav_item_2"> <a href="about.html" class="menu__link"> About Us </a> </li>
+						<li class="m_nav_item menu__item menu__item--current" id="moble_nav_item_4"> <a href="appointment.html" class="menu__link">Appointment </a> </li>
+						<li class="m_nav_item menu__item" id="moble_nav_item_4"> <a href="dlogin.html" class="menu__link">Clinic-Login </a> </li>
+					</ul>
+				</nav>
+
+				</div>
+				<!-- /.navbar-collapse -->
+			</nav>
+	 </div>
+</div>
+<!-- banner -->
+<!-- banner1 -->
+	<div class="banner1 jarallax">
+		<div class="container">
+		</div>
+	</div>
+
+	<div class="services-breadcrumb">
+		<div class="container">
+			<ul>
+				<li><a href="index.html">Home</a><i>|</i></li>
+				<li>Appointment</li>
+			</ul>
+		</div>
+	</div>
+<!-- //banner1 -->
+<!-- icons -->
+	<div class="banner-bottom" id="about">
+		<div class="container">
+			<h2 class="w3_heade_tittle_agile">Appointment</h2>
+			<p class="sub_t_agileits">Ensures that you make the best of your time</p>
+			<div class="book-appointment">
+				<h4>Make an appointment</h4>
+						<form action="appointment" method="post">
+						<div class="left-agileits-w3layouts same">
+						<div class="gaps">
+							<p>Full Name</p>
+								<input type="text" id="patientname" name="Patient Name" placeholder="" required=""/>
+						</div>
+							<div class="gaps">
+							<p>Phone Number</p>
+								<input type="text" id="patientnumber" name="Number" maxlength="11" placeholder="" required=""/>
+							</div>
+							<div class="gaps">
+							<p>Email</p>
+									<input type="email" id="patientemail" name="email" placeholder="" required="" />
+							</div>
+							<div class="gaps">
+								<p>Gender</p>
+									<select class="option" id="patientgender" required="">
+										<option></option>
+										<option value="Male">Male</option>
+										<option value="Female">Female</option>
+									</select>
+							</div>
+						</div>
+						<div class="right-agileinfo same">
+						<div class="gaps">
+							<p>Eye Clinic</p>
+								<input type="text" id="eye_clinic" name="eye_clinic">
+							</div>
+						<div class="gaps">
+							<p>Select Date</p>
+								<input  type="text" id="sdate" name="sdate">
+						</div>
+
+						<div class="gaps">
+							<p>Start Time</p>
+								<input  type="text" id="tstart" name="tstart">
+						</div>
+						<div class="gaps">
+							<p>End Time</p>
+								<input  type="text" id="tend" name="tend">
+						</div>
+						</div>
+						<div class="clearfix"></div>
+						<input type="submit" onclick="myFunction1()" class="modal-button" href="#myModal1" value="Make an Appointment">
+						<div id="myModal1" class="modal">
+            <div class="modal-content">
+            <div class="modal-header">
+            <h3>Schedule Successfully Booked! -- A representative will contact you shortly.</h3>
+            </div>
+            <div class="modal-body">
+            <h3 style="font-weight:bolder;">Patient Details</h3>
+            <div class="pop">
+              <h5 style="font-weight:bolder;">Patient's Name:</h5><h5 style="font-size:larger; margin-bottom: 0.5em;" id="pname"></h5>
+              <h5 style="font-weight:bolder;">Contact Info: </h5><h5 style="font-size:larger; margin-bottom: 0.5em;" id="pnum"></h5>
+              <h5 style="font-weight:bolder;">Email: </h5><h5 style="font-size:larger; margin-bottom: 0.5em;" id="pemail"></h5>
+			  <h5 style="font-weight:bolder;">Gender: </h5><h5 style="font-size:larger; margin-bottom: 0.5em;" id="pgender"></h5>
+            </div>
+            <h3 style="font-weight:bolder;">Appointment Details</h3>
+            <div class="pop">
+            	<h5 style="font-weight:bolder;">Appointment Id:</h5> <h5 style="font-size:larger; margin-bottom: 0.5em;" id="apid"></h5>
+            	<h5 style="font-weight:bolder;">Clinic Name:</h5> <h5 style="font-size:larger; margin-bottom: 0.5em;" id="clinicname"></h5>
+            	<h5 style="font-weight:bolder;">Address:</h5> <h5 style="font-size:larger; margin-bottom: 0.5em;" id="clinicaddress"></h5>
+              <h5 style="font-weight:bolder;">Contact Info:</h5> <h5 style="font-size:larger; margin-bottom: 0.5em;" id="clinicphone"></h5>
+              <h5 style="font-weight:bolder;">Appointment Date:</h5> <h5 style="font-size:larger; margin-bottom: 0.5em;" id="apdate"></h5>
+              <h5 style="font-weight:bolder;">Appointment Day:</h5> <h5 style="font-size:larger; margin-bottom: 0.5em;" id="apday"></h5>
+              <h5 style="font-weight:bolder;">Start Time:</h5> <h5 style="font-size:larger; margin-bottom: 0.5em;" id="starttime"></h5>
+			  			<h5 style="font-weight:bolder;">End Time:</h5> <h5 style="font-size:larger; margin-bottom: 0.5em;" id="endtime"></h5>
+
+							<span class="button1">
+									<a type="button" id="add_button" onclick="location.href='index.html'" style="color: white">DONE</a>
+              </span>
+							<p style="font-style: italic; font-size:10px; text-align:center">--- Please take a screenshot of this page as proof --- </p>
+
+            </div>
+            </div>
+            <div class="modal-footer">
+            <h3>ISeeU</h3>
+            </div>
+            </div>
+            </div>
+										</form>
+									</div>
+					   </div>
+
+		</div>
+
+<!-- icons -->
+
+<a href="#" id="toTop" style="display: block;"> <span id="toTopHover" style="opacity: 1;"> </span></a>
+ <!-- js -->
+ <script>
+ var btn = document.querySelectorAll(".modal-button");
+var modals = document.querySelectorAll('.modal');
+var spans = document.getElementsByClassName("close");
+for (var i = 0; i < btn.length; i++) {
+ btn[i].onclick = function(e) {
+    e.preventDefault();
+    modal = document.querySelector(e.target.getAttribute("href"));
+    modal.style.display = "block";
+	myFunction1();
+ }
+}
+for (var i = 0; i < spans.length; i++) {
+ spans[i].onclick = function() {
+    for (var index in modals) {
+      if (typeof modals[index].style !== 'undefined') modals[index].style.display = "none";
+    }
+ }
+}
+window.onclick = function(event) {
+    if (event.target.classList.contains('modal')) {
+     for (var index in modals) {
+      if (typeof modals[index].style !== 'undefined') modals[index].style.display = "none";
+     }
+    }
+}
+</script>
+
+<!--for banner-->
+<script src="js/jquery-2.2.3.min.js"></script>
+
+<!-- start-smoth-scrolling -->
+<script type="text/javascript" src="js/move-top.js"></script>
+<script type="text/javascript" src="js/easing.js"></script>
+<script type="text/javascript">
+	jQuery(document).ready(function($) {
+		$(".scroll").click(function(event){
+			event.preventDefault();
+			$('html,body').animate({scrollTop:$(this.hash).offset().top},1000);
+		});
+	});
+</script>
+<!-- start-smoth-scrolling -->
+	<script src="js/jarallax.js"></script>
+	<script type="text/javascript">
+		/* init Jarallax */
+		$('.jarallax').jarallax({
+			speed: 0.5,
+			imgWidth: 1366,
+			imgHeight: 768
+		})
+	</script>
+
+	<script src="js/bootstrap.js"></script>
+<!-- //for bootstrap working -->
+<!-- here stars scrolling icon -->
+	<script type="text/javascript">
+		$(document).ready(function() {
+
+			$().UItoTop({ easingType: 'easeOutQuart' });
+
+			});
+	</script>
+
+<!-- //here ends scrolling icon -->
+
+ <!-- The core Firebase JS SDK is always required and must be listed first -->
+ <script src="https://www.gstatic.com/firebasejs/8.6.8/firebase-app.js"></script>
+
+
+ <!-- TODO: Add SDKs for Firebase products that you want to use
+	  https://firebase.google.com/docs/web/setup#available-libraries -->
+ <script src="https://www.gstatic.com/firebasejs/8.6.8/firebase-analytics.js"></script>
+ <script src="https://www.gstatic.com/firebasejs/8.6.8/firebase-auth.js"></script>
+ <script src="https://www.gstatic.com/firebasejs/8.6.8/firebase-firestore.js"></script>
+
+ <script>
+	var firebaseConfig = {
+    apiKey: "AIzaSyCPsz-wWhl_iq-95a3HxlhqB9KkZMKU-EE",
+    authDomain: "iseeu-4eb33.firebaseapp.com",
+    databaseURL: "https://iseeu-4eb33-default-rtdb.asia-southeast1.firebasedatabase.app",
+    projectId: "iseeu-4eb33",
+    storageBucket: "iseeu-4eb33.appspot.com",
+    messagingSenderId: "889653753645",
+    appId: "1:889653753645:web:a8e5c5d908cbafab71c5a4",
+    measurementId: "G-27WCX8J7DB"
+  };
+
+   // Initialize Firebase
+   firebase.initializeApp(firebaseConfig);
+  firebase.analytics();
+
+    // Make auth and firestore references
+	const auth = firebase.auth();
+	const db = firebase.firestore();
+ </script>
+<script src="js/booking.js"></script>
+</body>
+</html>
